@@ -18,7 +18,7 @@ screen.key(['escape', 'q', 'C-c'], function() {
 });
 
 function renderTrelloBoard() {
-  getBaard()
+  getBoard()
   .then((content) => {
     text.setContent(content);
     screen.render();
@@ -28,7 +28,7 @@ function renderTrelloBoard() {
   });
 }
 
-function getBaard() {
+function getBoard() {
   return new Promise((done) => {
     t.get(`/1/boards/${TRELLO_BOARD_ID}/lists?cards=open&card_fields=name&fields=name`, function(err, lists) {
       if (err) throw err;
