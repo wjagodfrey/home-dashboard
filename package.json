@@ -1,0 +1,13 @@
+{
+  "name": "home-dashboard",
+  "version": "1.0.0",
+  "description": "Dashboard for home use.",
+  "main": "app.js",
+  "author": "Wilfred Godfrey <wjagodfrey@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "chalk": "^1.1.3",
+    "node-trello": "^1.1.2"
+  }
+}
